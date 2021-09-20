@@ -1,0 +1,121 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Sign Up</title>    
+<style>
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#6abadeba;  
+    font-family: 'Arial';  
+}  
+.login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #23463f;  
+        border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}  
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: blue;  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}  
+    </style> 
+    <script type="text/javascript">
+        function RestrictFirstZero(e) {
+            if (e.srcElement.value.length == 0 && e.which == 48) {
+                e.preventDefault();
+                return false;
+            }
+        };
+ 
+        function PreventFirstZero(event) {
+            if (event.srcElement.value.charAt(0) == '0') {
+                event.srcElement.value = event.srcElement.value.slice(1);
+            }
+        };
+    </script> 
+</head>    
+<body>
+    <h2>Welcome to Blogs Recommendations System</h2>    
+    <h2>Sign Up Page</h2><br>    
+    <div class="login">    
+    <form action="/action_page.php" method="GET" novalidate>    
+ 
+    </form>     
+    <form action="areaofinterest.html">
+        <label><b>Name:     
+        </b>    
+        </label>    
+        <input required type="text" name="name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)"id="name" placeholder="Username" />     
+        <br><br>    
+        <label><b>Password:
+        </b>    
+        </label>    
+        <input required type="Password" name="Pass" id="Pass" placeholder="Password" />     
+        <br><br>
+        <label><b>Age:     
+        </b>    
+        </label>    
+        <input required type="text" onkeypress="RestrictFirstZero(event)" maxlength="2" name="age" id="age" placeholder="   Age" />    
+        <br><br>
+        <label><b>Profession:     
+        </b>    
+        </label>    
+        <select name="Profession" id="Profession" required>
+            <option value="" selected="selected">Student</option>
+            <option value="" selected="selected">Teacher</option>
+            <option value="" selected="selected">Personal Use</option>
+          </select>       
+        <br><br>   
+        <input type="submit" name="log" id="log" value="SignIn Here" >
+        <br><br> 
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        <a href="forgot.html">Frogot Password</a>   
+        
+      </form>
+</div>    
+</body>    
+</html>     

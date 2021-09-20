@@ -1,0 +1,232 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Home Page</title>
+    <style>
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(101, 152, 182);
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.heading {
+    background-color: rgb(101, 152, 182);
+    padding: 100px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+    justify-content: center;
+    color: #f2f2f2;
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+hr.divider {
+  height: 0.2rem;
+  max-width: 13.25rem;
+  margin: 1.5rem auto;
+  background-color: #c53571;
+  opacity: 1;
+}
+.find_out_more,.get_started {
+  background-color: #c53571;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.topblogs {
+    background-color: rgb(57, 170, 67);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+.column {
+  text-align: center;
+  float: left;
+  width: 20%;
+  padding: 30px;
+}
+.about {
+    background-color: rgb(187, 138, 47);
+    padding: 100px;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+.contact {
+    padding: 100px;
+    justify-content: center;
+    color: #000000;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 100px;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <div class="topnav-right">
+        <a href="log.html">Log In</a>
+        <a href="signin.html">Sign Up</a>
+        <a class="nav-link" href="#topblogs">Top Blogs</a>
+        <a class="nav-link" href="#about">About Us</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Heading-->
+    <section class="heading">
+        Blogs Recommendations System
+        <hr class="divider" />
+        <p style="font-size: 40px;">Heaven for Bloggers!</p>
+        <button class="find_out_more">FIND OUT MORE</button>
+    </section><br>
+
+    <!-- Top Blogs-->
+    <section class="topblogs" id="topblogs"><br>
+        <p style="text-align: center; font-size: 50px">Today's Top Blogs</p>
+        <hr class="divider" />
+        <div class="row" style="text-align: center;">
+            <div class="column">
+              <h2>Planet Python—the go-to Python blog</h2>
+              <p>Planet Python is probably one of the first sources you’ll ever consult for all your Python needs. The reason for this is quite simple—it’s immensely comprehensive.
+                With several posts a day on average, Planet Python’s incredible range is owed to the fact that it brings together recent Python-related posts from various other blogs. All the sources are reputable and the posts themselves have been carefully selected as well, resulting in a blog that gets you a good range of news and tutorials all across the board.
+            <a href="https://planetpython.org/">Read More</a>
+            </p>
+            </div>
+            <div class="column">
+              <h2>Discovering Anomalous Data with Self-Supervised Learning</h2>
+              <p>Discovering Anomalous Data with Self-Supervised Learning
+                Thursday, September 2, 2021
+                Posted by Chun-Liang Li and Kihyuk Sohn, Research Scientists, Google Cloud
+                Anomaly detection (sometimes called outlier detection or out-of-distribution detection) is one of the most common machine learning applications across many domains, from defect detection in manufacturing to fraudulent transaction detection in finance. It is most often used when it is easy to collect a large amount of known-normal examples but where anomalous data is rare and difficult to find.
+            <a href="http://ai.googleblog.com">Read More</a>
+            </p>
+            </div>
+            <div class="column">
+              <h2>3 Cybersecurity Start-up Ideas</h2>
+              <p>The cybersecurity industry is in focus today like it’s never been before. Cyber attacks have become more complex than ever and cyber criminals are becoming smarter each day. The global health pandemic and the ensuing remote work culture has widened the perimeter of enterprise risk. This is why the cybersecurity space is a very relevant one to start a new business in. 
+                <a href="https://www.cm-alliance.com/cybersecurity-blog/3-cybersecurity-start-up-ideas">Read More</a></p>
+            </div>
+            <div class="column">
+              <h2>Everything you need to know about 5G.</h2>
+              <p>5G is the 5th generation mobile network. It is a new global wireless standard after 1G, 2G, 3G, and 4G networks. 5G enables a new kind of network that is designed to connect virtually everyone and everything together including machines, objects, and devices.
+
+                5G wireless technology is meant to deliver higher multi-Gbps peak data speeds, ultra low latency, more reliability, massive network capacity, increased availability, and a more uniform user experience to more users. Higher performance and improved efficiency empower new user experiences and connects new industries.
+            <a href="https://www.qualcomm.com/5g/what-is-5g">Read More</a></p>
+            </div>
+          </div>
+    </section><br>
+    <!-- About-->
+    <section class="about" id="about">
+        <p style="font-size: 40px;">We have got what you need!</p>
+        <hr class="divider" />
+        <p style="color: white;">Get Started with our blogging website. The best in-class for perfect recommendations and <br>short summary of every blogs.  This is the new age bloggers first choice.</p>
+        <button class="get_started">Get Started!</button>
+    </section>
+    <!-- Contact Us-->
+    <section class="contact" id="contact">
+        <p style="text-align: center; font-size: 40px">Lets Get In Touch!</p>
+        <hr class="divider" />
+        <div class="container">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode==32)" id="name" name="name" placeholder="Your name..">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your E-Mail Address">
+            <label for="mobile">Mobile Number</label>
+            <input type="text" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 )" maxlength="10" id="mobile" name="mobile" placeholder="Your Mobile Number">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+            <p style="text-align: center"><input type="submit" value="Submit"></p>
+          </form></div>
+    </section>
+</body>
+</html>
